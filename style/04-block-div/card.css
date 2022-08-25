@@ -1,29 +1,118 @@
-/* 设置4种样式的格式 */
-.p[data-node-id][data-type="NodeParagraph"][style*="background-color: var(--b3-card-"],
-.list[style*="background-color: var(--b3-card-"] {
-    padding: 16px 8px;
+/*
+ * 引用卡片样式
+ *
+ * 引用卡片在基础的引用样式的基础上，对 error、warning、info 和 success 四种卡片
+ * 定制了图标和上边框。边框颜色已由变量 `--b3-card-<foo>-border`定义。
+ */
+
+.protyle-wysiwyg
+.bq[style*="background-color: var(--b3-card-error-background);"] {
+    background-image: url('../../src/error-icon.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: top 2px left 2px;
+    border-top: 3px solid var(--b3-card-error-border);
+    background-color: var(--b3-card-error-background);
 }
 
-.p[data-node-id][data-type="NodeParagraph"][style*="background-color: var(--b3-card-"]::after,
-.list[style*="background-color: var(--b3-card-"]::after {
-    content: url(../../src/pin.svg);
-    display: block;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    z-index: 2;
+.protyle-wysiwyg
+.bq[style*="background-color: var(--b3-card-warning-background);"]{
+    background-image: url('../../src/warning-icon.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: top 2px left 2px;
+    border-top: 3px solid var(--b3-card-warning-border);
+    background-color: var(--b3-card-warning-background);
 }
 
+.protyle-wysiwyg
+.bq[style*="background-color: var(--b3-card-info-background);"] {
+    background-image: url('../../src/info-icon.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: top 2px left 2px;
+    border-top: 3px solid var(--b3-card-info-border);
+    background-color: var(--b3-card-info-background);
+}
 
+.protyle-wysiwyg
+.bq[style*="background-color: var(--b3-card-success-background);"] {
+    background-image: url('../../src/success-icon.svg');
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: top 2px left 2px;
+    border-top: 3px solid var(--b3-card-success-border);
+    background-color: var(--b3-card-success-background);
+}
 
-/* 4种样式和13种背景中间的引用设置透明度 */
-.protyle-wysiwyg [style*="background-color"] .bq,
-.protyle-wysiwyg [style*="background-color"] .code-block,
-.protyle-wysiwyg [style*="background-color"] .render-node,
-.protyle-wysiwyg [style*="background-color"] tbody tr {
-    background-color: var(--b3-theme-background-tm) !important;
+/*
+ * 段落卡片样式
+ *
+ * 段落卡片的样式包括深色边框、图标、修复左边线。其配色和图标与引用卡片保持一致。
+ */
+
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-error-background);"] {
+    border: 1px solid var(--b3-card-error-border) !important;
+    border-radius: var(--b3-border-radius-noraml);
+}
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-error-background);"]
+> div:first-child::before {
+    content: url("../../src/error-icon.svg");
+    padding-right: 2px;
+}
+.protyle-wysiwyg [data-node-id].li
+>.p[style*="background-color: var(--b3-card-error-background);"]::before {
+    left: -19px !important; /* 左边框修正 */
+}
+
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-warning-background);"] {
+    border: 1px solid var(--b3-card-warning-border) !important;
+    border-radius: var(--b3-border-radius-noraml);
+}
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-warning-background);"]
+> div:first-child::before {
+    content: url("../../src/warning-icon.svg") " ";
+    padding-right: 2px;
+}
+.protyle-wysiwyg [data-node-id].li
+>.p[style*="background-color: var(--b3-card-warning-background);"]::before {
+    left: -19px !important; /* 左边框修正 */
+}
+
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-info-background);"] {
+    border: 1px solid var(--b3-card-info-border) !important;
+    border-radius: var(--b3-border-radius-noraml);
+}
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-info-background);"]
+> div:first-child::before {
+    content: url("../../src/info-icon.svg") " ";
+    padding-right: 2px;
+}
+.protyle-wysiwyg [data-node-id].li
+>.p[style*="background-color: var(--b3-card-info-background);"]::before {
+    left: -19px !important; /* 左边框修正 */
+}
+
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-success-background);"] {
+    border: 1px solid var(--b3-card-success-border) !important;
+    border-radius: var(--b3-border-radius-noraml);
+}
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-success-background);"]
+>div:first-child::before {
+    content: url("../../src/success-icon.svg");
+    padding-right: 2px;
+}
+.protyle-wysiwyg [data-node-id].li
+>.p[style*="background-color: var(--b3-card-success-background);"]::before {
+    left: -19px !important; /* 左边框修正 */
 }
 
 /* -----------------------------------------------------到此为止结束-------------------------------------------- */
