@@ -1,11 +1,12 @@
 /* --------------------------------------------------标签页 Tab--------------------------------------------- */
+
 /* ————————————————————————标签页样式——————————————————————————*/
 .layout-tab-bar .item {
     padding: 1px 4px 1px 4px;
     margin: 0px;
     border: 1px solid var(--b3-border-color);
     border-collapse: collapse !important;
-    border-radius: var(--b3-border-radius-none) !important;
+    border-radius: 4px 4px 0 0 !important;
     background-color: var(--b3-theme-tab);
     box-sizing: border-box;
     height: 35px;
@@ -30,21 +31,47 @@
 }
 
 /* ————————————————————鼠标悬浮在标签页上面———————————————————— */
-.layout-tab-bar .item:not(.item--focus):hover {
-    background-color: var(--b3-theme-tab) !important;
+.layout-tab-bar .item:hover {
+    background-color: var(--b3-theme-hover2) !important;
+    border: 1px solid var(--b3-theme-primary) !important;
+    border-radius: 4px 4px 0 0 !important;
 }
 
+.layout-tab-bar .item:hover .item__text {
+    color: var(--b3-theme-primary) !important;
+}
+
+.layout-tab-bar .item--focus:hover {
+    background-color: var(--b3-theme-background2) !important;
+    border: 1px var(--b3-theme-primary) !important;
+    border-bottom: 0px !important;
+    border-top: 2px solid var(--b3-theme-primary) !important;
+    border-radius: 4px 4px 0 0 !important;
+}
 
 /* ——————————————————————————选中的标签页—————————————————————— */
 .layout-tab-bar .item--focus {
     background-color: var(--b3-theme-background2);
-    border: 1px solid transparent;
-    border-top: var(--b3-border-normal) !important;
+    /* border: var(--b3-border-normal);
+    border-bottom: 0.05em solid transparent !important; */
+    border: 1px transparent !important;
+    border-bottom: 0px !important;
+    border-top: 2px solid var(--b3-theme-primary) !important;
+    border-radius: 4px 4px 0 0 !important;
 }
 
 /* 去掉标签上方阴影 */
 .layout__wnd--active .layout-tab-bar .item--focus {
-    box-shadow: none;
+    box-shadow: none !important;
+}
+.layout__wnd--active .layout-tab-bar .item {
+    box-shadow: none !important;
+}
+.layout-tab-bar .item--focus {
+    box-shadow: none !important;
+}
+.layout-tab-bar .item {
+    box-shadow: none !important;
 }
 
 .layout-tab-bar .item:not(:last-child) {
@@ -68,6 +95,7 @@
 }
 
 /* --------------------------------------------------标签页 END--------------------------------------------- */
+<<<<<<< HEAD
 
 /* v2.1.14引入 */
 .layout-tab-bar .item:not(:last-child), .layout-tab-bar .item:last-child:not(.item--focus):not(.item--readonly) {
@@ -77,3 +105,5 @@
 .layout-tab-bar .item:last-child:not(.item--readonly) {
     margin-right: 0;
 }
+=======
+>>>>>>> 3d69a77 (feat: add radius and active tab shadow to tab bar)

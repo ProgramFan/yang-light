@@ -292,6 +292,8 @@
     --b3-card-warning-border: #de7802;
     --b3-card-info-border: #245dbd;
     --b3-card-success-border: #2ea121;
+
+    --b3-border-tab: 2px solid var(--b3-theme-primary);
 }
 
 /* ----------------------------------------------------root定义结束---------------------------------------------------- */
