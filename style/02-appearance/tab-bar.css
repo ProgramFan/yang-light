@@ -10,10 +10,16 @@
     background-color: var(--b3-theme-tab);
     box-sizing: border-box;
     height: 35px;
+    min-height: 35px; /* 重设最小高度，默认的太高了 */
 }
 
 .layout-tab-bar .item:first-child {
     border-left: 1px solid transparent !important;
+}
+
+/* 停用系统主题里面的活跃标签页下划线，太丑了 */
+.layout-tab-bar .item--focus:after {
+  height: 0px;
 }
 
 /* .layout-tab-bar .item:last-child {
