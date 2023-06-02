@@ -63,11 +63,11 @@
     --b3-theme-sub-color: blue;
 
     /* 字体 */
-    --b3-font-family: "LXGW Bright GB", "LXGW WenKai GB", "XGWWenKai-Regular", "仓耳今楷03", 'WWJNWLKQ', 'zh quote', -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --b3-font-family-code: "Hasklug Nerd Font", "Hasklig", "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "LXGW WenKai Mono GB","LXGWWenKai-Regular", "仓耳今楷03", "HarmonyOS Sans SC", "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
+    --b3-font-family: "Ysabeau Office", "LXGW WenKai GB Fusion", "LXGWWenKai-Regular", "仓耳今楷03", 'WWJNWLKQ', 'zh quote', -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --b3-font-family-code: "Hasklig", "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "LXGW WenKai Mono GB Fusion","LXGWWenKai-Regular", "仓耳今楷03", "HarmonyOS Sans SC", "Microsoft YaHei", "Liberation Mono", "Courier New", monospace;
     --b3-font-family-emoji: "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
-    --b3-font-family-graph: mononoki;
-    --b3-font-family-math: KaTeX_Math;
+    --b3-font-family-graph: "Ysabeau Office", "LXGW WenKai GB Fusion", mononoki;
+    --b3-font-family-math: KaTeX_Math, "LXGW WenKai GB Fusion";
 
     /* 线条颜色 */
     --b3-border-color: rgba(128, 128, 128, 0.1);
