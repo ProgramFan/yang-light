@@ -27,6 +27,7 @@ body {
     padding: 1px 8px;
     box-sizing: border-box;
     height: 34px;
+    min-height: 34px !important;
 }
 
 /* ————————————————————大纲等文字显示主题色———————————————————— */
