@@ -1,105 +1,112 @@
-/* -------------------------------------------------代码块样式--------------------------------------------------- */
-.code-block {
-    margin: 4px !important;
-    border-radius: var(--b3-border-radius-noraml) !important;
-    background-color: var(--b3-theme-background2) !important;
+/*
+ * 代码块样式：从 Zhi 主题复制而来，加了一个阴影效果。
+ */
+
+html[data-theme-mode=light] {
+  --zhi-code-tab-bg: #fff;
+  --zhi-code-content-bg: #f8f9fa
 }
 
-/* 代码块主体部分设置 */
+html[data-theme-mode=dark] {
+  --zhi-code-tab-bg: #000;
+  --zhi-code-content-bg: #1e1e1e
+}
+
+html[data-theme-mode=green] {
+  --zhi-code-tab-bg: #f5f5d5;
+  --zhi-code-content-bg: rgba(27, 31, 35, .05)
+}
+
+#preview .protyle-action__language {
+  right: .2rem !important
+}
+
+#preview .protyle-action__language:after {
+  display: none !important
+}
+
+#preview .protyle-action__copy {
+  display: none !important
+}
+
+.code-block {
+  border: .5px solid var(--b3-border-color) !important;
+  border-radius: 5px !important;
+  padding-top: 32px !important;
+  background: var(--zhi-code-tab-bg);
+  border-radius: var(--b3-border-radius-noraml) !important;
+  box-shadow: var(--b3-code-block-shadow);
+}
+
 .b3-typography div.hljs,
 .protyle-wysiwyg div.hljs {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    padding-left: 16px;
-    font-family: var(--b3-font-family-code);
-    background-size: 20px 20px;
-    background-image: none !important;
-    background: transparent;
-    border-radius: 0;
-    border-top: 1px solid var(--b3-theme-background-gray);
+  color: var(--b3-theme-on-background);
+  padding: 8px;
+  font-family: var(--b3-font-family-code);
+  border-top: .5px solid var(--b3-border-color);
+  border-radius: 0 0 5px 5px !important;
+  background: var(--zhi-code-content-bg);
 }
 
-/* 代码块上方部分设置 */
-.protyle-wysiwyg .code-block,
-.b3-typography .code-block {
-    position: relative;
-    display: block;
-    border-radius: var(--b3-border-radius-noraml);
-    padding-top: 32px !important;
-    box-shadow: var(--b3-code-block-shadow);
-    border-bottom: var(--b3-border-wider);
-    /* border-top: 3px solid #2ea121; */
+.code-block:after {
+  content: " ";
+  position: absolute;
+  background: #fa625c;
+  box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
+  border-radius: 50%;
+  top: 9px !important;
+  left: 8px !important;
+  height: 12px !important;
+  width: 12px !important;
+  z-index: 1;
 }
 
-/* 设置顶部三个mac按钮样式 */
-.code-block::after {
-    content: ' ';
-    position: absolute;
-    background: #fa625c;
-    box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
-    border-radius: var(--b3-border-radius-round);
-    top: 10px;
-    left: 15px;
-    height: 12px;
-    width: 12px;
-    z-index: 1;
-}
-
-/*  ————————————————————————————————————代码块行数——————————————————————————————————*/
 .protyle-linenumber__rows {
-    margin-top: 32px !important;
-    padding: 4px;
-    background-color: var(--b3-theme-background2) !important;
-    margin-bottom: 0px;
-    font-family: var(--b3-font-family-code);
+  margin-top: 32px !important;
+  padding: 4px;
+  background-color: var(--b3-theme-background) !important;
+  margin-bottom: 0;
+  font-family: var(--b3-font-family-code);
+  border-top-left-radius: 4px;
 }
 
-/* 代码块行数的数字  */
-.protyle-linenumber__rows span::before {
-    color: rgba(128, 128, 128, 0.5);
+.protyle-linenumber__rows span:before {
+  color: #808007;
 }
 
-/* 代码块的语言代码 */
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-    margin-top: 0px;
-    position: absolute;
-    right: 4em;
-    border-radius: 4px;
-    opacity: 1 !important;
-    font-family: var(--b3-font-family-code);
+  margin-top: 0;
+  position: absolute;
+  right: 3.5em;
+  border-radius: 1px;
+  opacity: 1 !important;
+  font-family: var(--b3-font-family-code);
 }
 
-.b3-typography .code-block .protyle-action .protyle-action__language::after,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
-    content: "›";
-    font-family: var(--b3-font-family-code);
-    color: #80808080;
-    opacity: 1;
+.b3-typography .code-block .protyle-action .protyle-action__language:after,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language:after {
+  content: "›";
+  font-family: var(--b3-font-family-code);
+  color: #80808080;
+  opacity: 1;
 }
 
-/* 复制和设置按钮样式 */
+code.hljs {
+  border: 1px solid var(--b3-border-color1);
+}
+
 .b3-typography .code-block .protyle-action .protyle-icon,
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-    opacity: 1 !important;
-    background-color: transparent !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
 }
 
 .b3-typography .code-block .protyle-action .protyle-icon svg,
 .b3-typography .code-block .protyle-action .protyle-action__language svg,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon svg,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language svg {
-    color: gray;
+  color: gray;
 }
-
-/* ————————————————————————————————集市里边代码块的主题—————————————————————————————— */
-code.hljs {
-    background-color: var(--b3-theme-background2) !important;
-    border-top: 3px solid #2ea121;
-    border-bottom: var(--b3-border-wider);
-    box-shadow: var(--b3-point-shadow);
-}
-
-/* -------------------------------------------------代码块样式 END--------------------------------------------------- */
