@@ -1,12 +1,20 @@
 @font-face {
   font-family: "LXGW WenKai GB";
-  src: local("LXGW WenKai GB Fusion"), local("LXGW WenKai GB"),
-       url("ttf/LXGWWenKaiGB-Regular.ttf");
+  src: local("LXGW WenKai GB Fusion"), local("LXGW WenKai GB");
+  font-style: normal italic;
+  font-weight: normal bold;
+}
+@font-face {
+  font-family: "LXGW WenKai GB";
+  src: url("ttf/LXGWWenKaiGB-Regular.ttf");
+  font-weight: normal;
+  font-style: normal italic;
 }
 @font-face {
   font-family: "LXGW WenKai GB";
   src: url("ttf/LXGWWenKaiGB-Bold.ttf");
   font-weight: bold;
+  font-style: normal italic;
 }
 
 @font-face {
@@ -22,13 +30,13 @@
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-Italic.otf");
-  font-style: oblique;
+  font-style: italic;
 }
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-BoldItalic.otf");
   font-weight: bold;
-  font-style: oblique;
+  font-style: italic;
 }
 
 @font-face {
@@ -44,11 +52,11 @@
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-It.otf");
-  font-style: oblique;
+  font-style: italic;
 }
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-BoldIt.otf");
   font-weight: bold;
-  font-style: oblique;
+  font-style: italic;
 }
