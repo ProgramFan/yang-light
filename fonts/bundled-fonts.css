@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "LXGW WenKai GB";
+  src: local("LXGW WenKai GB Fusion"), local("LXGW WenKai GB"),
+       url("ttf/LXGWWenKaiGB-Regular.ttf");
+}
+@font-face {
+  font-family: "LXGW WenKai GB";
+  src: url("ttf/LXGWWenKaiGB-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ysabeau Office";
+  src: local("Ysabeau Office"),
+       url("ttf/YsabeauOffice-Regular.otf");
+}
+@font-face {
+  font-family: "Ysabeau Office";
+  src: url("ttf/YsabeauOffice-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Ysabeau Office";
+  src: url("ttf/YsabeauOffice-Italic.otf");
+  font-style: oblique;
+}
+@font-face {
+  font-family: "Ysabeau Office";
+  src: url("ttf/YsabeauOffice-BoldItalic.otf");
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Hasklig";
+  src: local("Hasklig"),
+       url("ttf/Hasklig-Regular.otf");
+}
+@font-face {
+  font-family: "Hasklig";
+  src: url("ttf/Hasklig-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Hasklig";
+  src: url("ttf/Hasklig-It.otf");
+  font-style: oblique;
+}
+@font-face {
+  font-family: "Hasklig";
+  src: url("ttf/Hasklig-BoldIt.otf");
+  font-weight: bold;
+  font-style: oblique;
+}
