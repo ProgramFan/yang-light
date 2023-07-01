@@ -1,19 +1,11 @@
 /* 设置导出样式 */
 @media print {
-    :root {
-        font-family: "仓耳今楷03";
-    }
-
     span.strong {
         font-weight: bold !important;
     }
 
     div.hr>div {
         border-color: transparent !important;
-    }
-
-    .h1 {
-        page-break-before: always;
     }
 
     div.hr {
