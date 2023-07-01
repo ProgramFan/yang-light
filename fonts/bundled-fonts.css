@@ -8,17 +8,13 @@
 @font-face {
   font-family: "LXGW WenKai GB";
   src: url("ttf/LXGWWenKaiGB-Regular.ttf");
+  font-weight: normal;
 }
-/*
- * NOTE: 文楷的官方粗体，但不够醒目，故采用常规体自动加粗。
- */
-/*
 @font-face {
   font-family: "LXGW WenKai GB";
   src: url("ttf/LXGWWenKaiGB-Bold.ttf");
   font-weight: bold;
 }
-*/
 
 @font-face {
   font-family: "Ysabeau Office";
