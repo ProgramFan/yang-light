@@ -1,35 +1,41 @@
+/*
+ * 如果本地存在字体，则选择文楷融合版，涵盖字符范围更广。
+ */
 @font-face {
   font-family: "LXGW WenKai GB";
-  src: local("LXGW WenKai GB Fusion"), local("LXGW WenKai GB");
-  font-style: normal italic;
-  font-weight: normal bold;
+  src: local("LXGW WenKai GB Fusion"), local("LXGW Bright GB")
 }
 @font-face {
   font-family: "LXGW WenKai GB";
   src: url("ttf/LXGWWenKaiGB-Regular.ttf");
-  font-weight: normal;
-  font-style: normal italic;
 }
+/*
+ * NOTE: 文楷的官方粗体，但不够醒目，故采用常规体自动加粗。
+ */
+/*
 @font-face {
   font-family: "LXGW WenKai GB";
   src: url("ttf/LXGWWenKaiGB-Bold.ttf");
   font-weight: bold;
-  font-style: normal italic;
 }
+*/
 
 @font-face {
   font-family: "Ysabeau Office";
-  src: local("Ysabeau Office"),
-       url("ttf/YsabeauOffice-Regular.otf");
+  src: url("ttf/YsabeauOffice-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-Bold.otf");
   font-weight: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-Italic.otf");
+  font-weight: normal;
   font-style: italic;
 }
 @font-face {
@@ -41,17 +47,20 @@
 
 @font-face {
   font-family: "Hasklig";
-  src: local("Hasklig"),
-       url("ttf/Hasklig-Regular.otf");
+  src: url("ttf/Hasklig-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-Bold.otf");
   font-weight: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-It.otf");
+  font-weight: normal;
   font-style: italic;
 }
 @font-face {
