@@ -66,3 +66,8 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Twitter Color Emoji";
+  src: url("ttf/TwitterColorEmoji-SVGinOT.ttf");
+}
