@@ -68,6 +68,10 @@
 }
 
 @font-face {
-  font-family: "Twitter Color Emoji";
-  src: url("ttf/TwitterColorEmoji-SVGinOT.ttf");
+  font-family: "Noto Color Emoji";
+  src: url("ttf/NotoColorEmoji-Regular.ttf");
+}
+@font-face {
+  font-family: "Twemoji Mozilla";
+  src: url("ttf/Twemoji.Mozilla.ttf");
 }
