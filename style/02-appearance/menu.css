@@ -1,16 +1,15 @@
 /* ---------------------------左上方点击更多按钮弹出的选择菜单相关设置----------------------- */
 .b3-menu, .b3-menu .b3-menu__submenu {
     border-radius: var(--b3-border-radius-noraml);
-    /* padding: 6px 6px 6px; */
+    padding: 5px 6px 5px;
     min-width: 200px !important;
     background-color: var(--b3-menu-background);
-    padding: 4px;
+    box-shadow: var(--b3-small-kuaiyinyong-shadow);
 }
 
 .b3-menu .b3-menu__submenu {
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 5px 6px 5px;
+    box-shadow: var(--b3-small-kuaiyinyong-shadow);
 }
 
 /* 鼠标悬浮都是圆角 */
