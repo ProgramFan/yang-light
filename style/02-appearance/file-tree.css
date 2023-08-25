@@ -5,12 +5,13 @@ body {
 
 /* ————————————————————文档树、大纲、反向链接的背景颜色 */
 .layout-tab-container:not(.fn_flex-1) {
-    background-image: linear-gradient(180deg,
-            rgba(255, 232, 232, 0.4) 0%,
-            rgba(236, 236, 255, 0.54) 25%,
-            rgba(228, 247, 236, 0.3) 50%,
-            rgba(223, 254, 224, 0.2) 75%,
-            rgba(245, 247, 249, 0.99) 100%);
+    /* background-image: linear-gradient(180deg, */
+    /*         rgba(255, 232, 232, 0.4) 0%, */
+    /*         rgba(236, 236, 255, 0.54) 25%, */
+    /*         rgba(228, 247, 236, 0.3) 50%, */
+    /*         rgba(223, 254, 224, 0.2) 75%, */
+    /*         rgba(245, 247, 249, 0.99) 100%); */
+    background: var(--b3-theme-surface) !important;
 }
 
 /* 给大纲/文档树添加边框 */
@@ -133,14 +134,14 @@ span.b3-list-item__icon.b3-tooltips.b3-tooltips__n {
 
 /* -----------------------------------------------------------文档树条目 END------------------------------------------------- */
 /* ----------------------------------------修改文档树新建按钮的样式----------------------------------------- */
-/* 隐藏文档树后面的引用计数 */
+/* 显示文档树后面的引用计数 */
 span.popover__block.counter.b3-tooltips.b3-tooltips__nw {
-    display: none;
+    display: inline-block !important;
 }
 
-/* 隐藏大纲后面的引用计数 */
+/* 显示大纲后面的引用计数 */
 .fn__flex-1.fn__flex-column.file-tree.sy__outline span.counter {
-    display: none;
+    display: inline-block !important;
 }
 
 /* ————————————————————更改新建按钮样式———————————————————— */
