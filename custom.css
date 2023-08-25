@@ -16,15 +16,15 @@
 } */
 
 /* ————————————————————03 显示文档树和大纲下方的引用计数 */
-/* span.popover__block.counter.b3-tooltips.b3-tooltips__nw {
+span.popover__block.counter.b3-tooltips.b3-tooltips__nw {
     display: inline-block !important;
 }
 
 .fn__flex-1.fn__flex-column.file-tree.sy__outline span.counter {
     display: inline-block !important;
-} */
+}
 
 /* ————————————————————04 取消显示文档树的渐变背景 */
-/* .layout-tab-container:not(.fn_flex-1) {
+.layout-tab-container:not(.fn_flex-1) {
     background: var(--b3-theme-surface) !important;
-} */
+}
