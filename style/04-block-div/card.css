@@ -53,62 +53,119 @@
 
 .protyle-wysiwyg
 .p[style*="background-color: var(--b3-card-error-background);"] {
+    display: flex;
+    align-items: center;
+    padding: 0px !important;
     border: 1px solid var(--b3-card-error-border) !important;
     border-radius: var(--b3-border-radius-noraml);
 }
 .protyle-wysiwyg
-.p[style*="background-color: var(--b3-card-error-background);"]
-> div:first-child::before {
+.p[style*="background-color: var(--b3-card-error-background);"]::before {
+    width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
+    height: 20px;
     content: url("../../src/error-icon.svg");
-    padding-right: 2px;
+    margin-left: 10px;
+    align-items: center;
 }
-.protyle-wysiwyg [data-node-id].li
->.p[style*="background-color: var(--b3-card-error-background);"]::before {
-    left: -19px !important; /* 左边框修正 */
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-error-background);"]
+> div:first-child {
+  padding-left: 10px;
+  border-left: 1px solid var(--b3-card-error-border);
+  margin: 5px;
+  margin-left: 10px;
 }
 
 .protyle-wysiwyg
 .p[style*="background-color: var(--b3-card-warning-background);"] {
+    display: flex;
+    align-items: center;
+    padding: 0px !important;
     border: 1px solid var(--b3-card-warning-border) !important;
     border-radius: var(--b3-border-radius-noraml);
 }
 .protyle-wysiwyg
+>.p[style*="background-color: var(--b3-card-warning-background);"]::before {
+    width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
+    height: 20px;
+    content: url("../../src/warning-icon.svg");
+    margin-left: 10px;
+    align-items: center;
+}
+.protyle-wysiwyg
 .p[style*="background-color: var(--b3-card-warning-background);"]
-> div:first-child::before {
-    content: url("../../src/warning-icon.svg") " ";
-    padding-right: 2px;
+> div:first-child {
+    padding-left: 10px;
+    border-left: 1px solid var(--b3-card-warning-border);
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-info-background);"] {
+    display: flex;
+    align-items: center;
+    padding: 0px !important;
+    border: 1px solid var(--b3-card-info-border) !important;
+    border-radius: var(--b3-border-radius-noraml);
+}
+.protyle-wysiwyg
+>.p[style*="background-color: var(--b3-card-info-background);"]::before {
+    width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
+    height: 20px;
+    content: url("../../src/info-icon.svg");
+    margin-left: 10px;
+    align-items: center;
+}
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-info-background);"]
+> div:first-child {
+    padding-left: 10px;
+    border-left: 1px solid var(--b3-card-info-border);
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-success-background);"] {
+    display: flex;
+    align-items: center;
+    padding: 0px !important;
+    border: 1px solid var(--b3-card-success-border) !important;
+    border-radius: var(--b3-border-radius-noraml);
+}
+.protyle-wysiwyg
+>.p[style*="background-color: var(--b3-card-success-background);"]::before {
+    width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
+    height: 20px;
+    content: url("../../src/success-icon.svg");
+    margin-left: 10px;
+    align-items: center;
+}
+.protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-success-background);"]
+> div:first-child {
+    padding-left: 10px;
+    border-left: 1px solid var(--b3-card-success-border);
+    margin: 5px;
+    margin-left: 10px;
+}
+
+/*
+ * 修正列表情况下的左边框
+ */
+
+.protyle-wysiwyg [data-node-id].li
+>.p[style*="background-color: var(--b3-card-error);"]::before {
+    left: -19px !important; /* 左边框修正 */
 }
 .protyle-wysiwyg [data-node-id].li
 >.p[style*="background-color: var(--b3-card-warning-background);"]::before {
     left: -19px !important; /* 左边框修正 */
 }
-
-.protyle-wysiwyg
-.p[style*="background-color: var(--b3-card-info-background);"] {
-    border: 1px solid var(--b3-card-info-border) !important;
-    border-radius: var(--b3-border-radius-noraml);
-}
-.protyle-wysiwyg
-.p[style*="background-color: var(--b3-card-info-background);"]
-> div:first-child::before {
-    content: url("../../src/info-icon.svg") " ";
-    padding-right: 2px;
-}
 .protyle-wysiwyg [data-node-id].li
 >.p[style*="background-color: var(--b3-card-info-background);"]::before {
     left: -19px !important; /* 左边框修正 */
-}
-
-.protyle-wysiwyg
-.p[style*="background-color: var(--b3-card-success-background);"] {
-    border: 1px solid var(--b3-card-success-border) !important;
-    border-radius: var(--b3-border-radius-noraml);
-}
-.protyle-wysiwyg
-.p[style*="background-color: var(--b3-card-success-background);"]
->div:first-child::before {
-    content: url("../../src/success-icon.svg");
-    padding-right: 2px;
 }
 .protyle-wysiwyg [data-node-id].li
 >.p[style*="background-color: var(--b3-card-success-background);"]::before {
