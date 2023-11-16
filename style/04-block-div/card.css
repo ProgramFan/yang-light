@@ -1,57 +1,63 @@
 /*
- * 引用卡片样式
+ * 引用块
  *
- * 引用卡片在基础的引用样式的基础上，对 error、warning、info 和 success 四种卡片
- * 定制了图标和上边框。边框颜色已由变量 `--b3-card-<foo>-border`定义。
+ * 引用块由于其内嵌任意元素，样式必须坐在块本身上面，不能做在段落上面。
  */
 
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-error-background);"] {
     background-image: url('../../src/error-icon.svg');
-    background-size: 18px 18px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-position: top 2px left 2px;
-    border-top: 3px solid var(--b3-card-error-border);
+    background-position: 10px center;
     background-color: var(--b3-card-error-background);
+    border-top: 3px solid var(--b3-card-error-border);
+    padding-left: 40px;
 }
 
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-warning-background);"]{
     background-image: url('../../src/warning-icon.svg');
-    background-size: 18px 18px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-position: top 2px left 2px;
-    border-top: 3px solid var(--b3-card-warning-border);
+    background-position: 10px center;
     background-color: var(--b3-card-warning-background);
+    border-top: 3px solid var(--b3-card-warning-border);
+    padding-left: 40px;
 }
 
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-info-background);"] {
     background-image: url('../../src/info-icon.svg');
-    background-size: 18px 18px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-position: top 2px left 2px;
-    border-top: 3px solid var(--b3-card-info-border);
+    background-position: 10px center;
     background-color: var(--b3-card-info-background);
+    border-top: 3px solid var(--b3-card-info-border);
+    padding-left: 40px;
 }
 
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-success-background);"] {
     background-image: url('../../src/success-icon.svg');
-    background-size: 18px 18px;
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    background-position: top 2px left 2px;
-    border-top: 3px solid var(--b3-card-success-border);
+    background-position: 10px center;
     background-color: var(--b3-card-success-background);
+    border-top: 3px solid var(--b3-card-success-border);
+    padding-left: 40px;
 }
 
 /*
- * 段落卡片样式
+ * 段落
  *
- * 段落卡片的样式包括深色边框、图标、修复左边线。其配色和图标与引用卡片保持一致。
+ * 段落的样式坐在段落上面，随着其内嵌内容而调整。注意由于不同类型的段落可能已经
+ * 被设置了相应的参数，我们必须在CSS选择器中列出全部我们需要考虑的段落类型。
  */
 
 .protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-error-background);"],
+.protyle-wysiwyg [data-node-id].li
 .p[style*="background-color: var(--b3-card-error-background);"] {
     display: flex;
     align-items: center;
@@ -60,6 +66,8 @@
     border-radius: var(--b3-border-radius-noraml);
 }
 .protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-error-background);"]::before,
+.protyle-wysiwyg [data-node-id].li
 .p[style*="background-color: var(--b3-card-error-background);"]::before {
     width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
     height: 20px;
@@ -77,6 +85,8 @@
 }
 
 .protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-warning-background);"],
+.protyle-wysiwyg [data-node-id].li
 .p[style*="background-color: var(--b3-card-warning-background);"] {
     display: flex;
     align-items: center;
@@ -85,6 +95,8 @@
     border-radius: var(--b3-border-radius-noraml);
 }
 .protyle-wysiwyg
+>.p[style*="background-color: var(--b3-card-warning-background);"]::before,
+.protyle-wysiwyg [data-node-id].li
 >.p[style*="background-color: var(--b3-card-warning-background);"]::before {
     width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
     height: 20px;
@@ -102,6 +114,8 @@
 }
 
 .protyle-wysiwyg
+.p[style*="background-color: var(--b3-card-info-background);"],
+.protyle-wysiwyg [data-node-id].li
 .p[style*="background-color: var(--b3-card-info-background);"] {
     display: flex;
     align-items: center;
@@ -110,6 +124,8 @@
     border-radius: var(--b3-border-radius-noraml);
 }
 .protyle-wysiwyg
+>.p[style*="background-color: var(--b3-card-info-background);"]::before,
+.protyle-wysiwyg [data-node-id].li
 >.p[style*="background-color: var(--b3-card-info-background);"]::before {
     width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
     height: 20px;
@@ -127,7 +143,9 @@
 }
 
 .protyle-wysiwyg
-.p[style*="background-color: var(--b3-card-success-background);"] {
+.p[style*="background-color: var(--b3-card-success-background);"],
+.protyle-wysiwyg [data-node-id].li
+>.p[style*="background-color: var(--b3-card-success-background);"] {
     display: flex;
     align-items: center;
     padding: 0px !important;
@@ -135,6 +153,8 @@
     border-radius: var(--b3-border-radius-noraml);
 }
 .protyle-wysiwyg
+>.p[style*="background-color: var(--b3-card-success-background);"]::before,
+.protyle-wysiwyg [data-node-id].li
 >.p[style*="background-color: var(--b3-card-success-background);"]::before {
     width: 20px; /* 使得盒子大小和图像大小一致，避免居中问题 */
     height: 20px;
@@ -149,27 +169,6 @@
     border-left: 1px solid var(--b3-card-success-border);
     margin: 5px;
     margin-left: 10px;
-}
-
-/*
- * 修正列表情况下的左边框
- */
-
-.protyle-wysiwyg [data-node-id].li
->.p[style*="background-color: var(--b3-card-error);"]::before {
-    left: -19px !important; /* 左边框修正 */
-}
-.protyle-wysiwyg [data-node-id].li
->.p[style*="background-color: var(--b3-card-warning-background);"]::before {
-    left: -19px !important; /* 左边框修正 */
-}
-.protyle-wysiwyg [data-node-id].li
->.p[style*="background-color: var(--b3-card-info-background);"]::before {
-    left: -19px !important; /* 左边框修正 */
-}
-.protyle-wysiwyg [data-node-id].li
->.p[style*="background-color: var(--b3-card-success-background);"]::before {
-    left: -19px !important; /* 左边框修正 */
 }
 
 /* -----------------------------------------------------到此为止结束-------------------------------------------- */
