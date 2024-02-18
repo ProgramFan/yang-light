@@ -115,8 +115,6 @@
 @import url("style/list-to-table.css");
 
 /* ————————————————————引入自定义设置———————————————————— */
-/* 搜索界面左右排版 */
-@import url("style/CtrlP.css");
 /* 设置打印样式 */
 @import url("style/07-others/print.css");
 
