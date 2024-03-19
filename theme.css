@@ -16,7 +16,7 @@
 /* 设置界面背景 */
 @import url("style/07-others/background.css");
 /* 增加`/`分栏样式 */
-@import url("style/07-others/column.css");
+/* @import url("style/07-others/column.css"); */
 
 
 /* ————————————————————界面修改———————————————————— */
@@ -27,7 +27,7 @@
 /* 修改文档树样式 */
 @import url("style/02-appearance/file-tree.css");
 /* 修改大纲样式 */
-/* @import url("style/02-appearance/outline.css"); */
+@import url("style/02-appearance/outline.css");
 /* 修改标签页样式 */
 @import url("style/02-appearance/tab-bar.css");
 /* 修改面包屑样式 */
@@ -45,7 +45,7 @@
 /* 修改设置界面搜索栏样式 */
 @import url("style/02-appearance/search.css");
 /* 修改警告界面样式 */
-/* @import url("style/02-appearance/warning-color.css"); */
+@import url("style/02-appearance/warning-color.css");
 
 
 /* ————————————————————行内元素———————————————————— */
@@ -106,13 +106,13 @@
 
 /* ————————————————————自定义属性———————————————————— */
 /* 增加文档的自定义属性 */
-@import url("style/05-custom-function-for-file/custom-function-for-file.css");
+/* @import url("style/05-custom-function-for-file/custom-function-for-file.css"); */
 /* 增加块的自定义属性 */
-@import url("style/06-custom-function-for-block/custom-function-for-block.css");
+/* @import url("style/06-custom-function-for-block/custom-function-for-block.css"); */
 /* 增加 Roy 的列表转思维导图代码 */
-@import url("style/list-to-map.css");
+/* @import url("style/list-to-map.css"); */
 /* 增加列表转表格代码 */
-@import url("style/list-to-table.css");
+/* @import url("style/list-to-table.css"); */
 
 /* ————————————————————引入自定义设置———————————————————— */
 /* 设置打印样式 */
