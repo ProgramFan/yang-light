@@ -1,11 +1,3 @@
-/*
- * 如果本地存在字体，则选择文楷融合版，涵盖字符范围更广。
- */
-@font-face {
-  font-family: "LXGW WenKai GB";
-  src: local("LXGW WenKai GB Fusion"), local("LXGW Bright GB");
-  font-weight: normal bold;
-}
 @font-face {
   font-family: "LXGW WenKai GB";
   src: url("ttf/LXGWWenKaiGB-Regular.ttf");
