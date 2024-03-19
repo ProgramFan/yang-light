@@ -18,7 +18,8 @@ html[data-theme-mode=green] {
 }
 
 #preview .protyle-action__language {
-  right: .2rem !important
+  right: .2rem !important;
+  z-index: -1;
 }
 
 #preview .protyle-action__language:after {
@@ -30,7 +31,7 @@ html[data-theme-mode=green] {
 }
 
 .code-block {
-  border: .5px solid var(--b3-border-color) !important;
+  border: .5px var(--b3-border-color) !important;
   border-radius: 5px !important;
   padding-top: 32px !important;
   background: var(--zhi-code-tab-bg);
