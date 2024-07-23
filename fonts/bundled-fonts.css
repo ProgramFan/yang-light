@@ -64,6 +64,6 @@
   src: url("ttf/NotoColorEmoji-Regular.ttf");
 }
 @font-face {
-  font-family: "Twemoji Mozilla";
-  src: url("ttf/Twemoji.Mozilla.ttf");
+  font-family: "Twemoji";
+  src: url("ttf/Twemoji-15.1.0.ttf");
 }
