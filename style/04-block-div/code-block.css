@@ -3,18 +3,13 @@
  */
 
 html[data-theme-mode=light] {
-  --zhi-code-tab-bg: #fff;
-  --zhi-code-content-bg: #fff
+  --zhi-code-tab-bg: #fafafa;
+  --zhi-code-content-bg: #fdfefe;
 }
 
 html[data-theme-mode=dark] {
   --zhi-code-tab-bg: #000;
   --zhi-code-content-bg: #1e1e1e
-}
-
-html[data-theme-mode=green] {
-  --zhi-code-tab-bg: #f5f5d5;
-  --zhi-code-content-bg: rgba(27, 31, 35, .05)
 }
 
 #preview .protyle-action__language {
@@ -36,9 +31,9 @@ html[data-theme-mode=green] {
   border: .5px var(--b3-border-color) !important;
   border-radius: 5px !important;
   padding-top: 32px !important;
-  padding-bottom: 8px !important;
-  padding-left: 1em !important;
-  padding-right: 1em !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   background: var(--zhi-code-tab-bg) !important;
   border-radius: var(--b3-border-radius-noraml) !important;
   box-shadow: var(--b3-code-block-shadow);
@@ -47,11 +42,12 @@ html[data-theme-mode=green] {
 .b3-typography div.hljs,
 .protyle-wysiwyg div.hljs {
   color: var(--b3-theme-on-background);
-  padding: 8px;
-  font-family: var(--b3-font-family-code);
-  border-top: .5px solid var(--b3-border-color);
+  padding: 8px 1em 8px 1em;
+  border-top: 1px solid var(--b3-border-color);
   border-radius: 0 0 5px 5px !important;
   background: var(--zhi-code-content-bg);
+  font-family: var(--b3-font-family-code);
+  text-align: left !important;
 }
 
 .code-block:after {
