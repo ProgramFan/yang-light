@@ -4,7 +4,7 @@
 
 html[data-theme-mode=light] {
   --zhi-code-tab-bg: #fff;
-  --zhi-code-content-bg: #f8f9fa
+  --zhi-code-content-bg: #fff
 }
 
 html[data-theme-mode=dark] {
@@ -31,10 +31,15 @@ html[data-theme-mode=green] {
 }
 
 .code-block {
+  /* add a margin to make the border shadow visible when exporting to pdf. */
+  margin: 1px !important;
   border: .5px var(--b3-border-color) !important;
   border-radius: 5px !important;
   padding-top: 32px !important;
-  background: var(--zhi-code-tab-bg);
+  padding-bottom: 8px !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  background: var(--zhi-code-tab-bg) !important;
   border-radius: var(--b3-border-radius-noraml) !important;
   box-shadow: var(--b3-code-block-shadow);
 }
@@ -60,6 +65,18 @@ html[data-theme-mode=green] {
   height: 12px !important;
   width: 12px !important;
   z-index: 1;
+}
+
+/*
+ * HACK: fix a problem in exporting as html or pdf, where the language name will
+ * be positioned too close to the top. This is caused by the zero width of the
+ * fn__flex-1 div. We add an after element and make it invisible to make the div
+ * have proper height.
+ */
+.protyle-wysiwyg .code-block .protyle-action .fn__flex-1:after,
+.b3-typography .code-block .protyle-action .fn__flex-1:after {
+  content: "O";
+  color: var(--zhi-code-tab-bg);
 }
 
 .protyle-linenumber__rows {
