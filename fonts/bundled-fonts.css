@@ -3,11 +3,6 @@
   src: url("ttf/LXGWWenKaiGB-Regular.ttf");
   font-weight: normal;
 }
-@font-face {
-  font-family: "LXGW WenKai GB";
-  src: url("ttf/LXGWWenKaiGB-Bold.ttf");
-  font-weight: bold;
-}
 
 @font-face {
   font-family: "Ysabeau Office";
@@ -15,18 +10,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-Bold.otf");
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-Italic.otf");
   font-weight: normal;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-BoldItalic.otf");
@@ -40,18 +38,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-Bold.otf");
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-It.otf");
   font-weight: normal;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Hasklig";
   src: url("ttf/Hasklig-BoldIt.otf");
@@ -59,10 +60,6 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: "Noto Color Emoji";
-  src: url("ttf/NotoColorEmoji-Regular.ttf");
-}
 @font-face {
   font-family: "Twemoji";
   src: url("ttf/Twemoji-15.1.0.ttf");
