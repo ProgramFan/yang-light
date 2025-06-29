@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "LXGW WenKai GB";
+  src: url("ttf/LXGWZhenKaiGB-Regular.ttf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: "Ysabeau Office";
   src: url("ttf/YsabeauOffice-Regular.otf");
   font-weight: normal;
