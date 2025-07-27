@@ -15,7 +15,8 @@
 
 /* ——————————修复无序列表中因为before伪元素造成的左边线条位置错乱—————————— */
 .protyle-wysiwyg [data-node-id].li>[data-node-id].bq:before {
-    left: -18px !important;
+    left: -18px;
+    display: none;
 }
 
 .protyle-wysiwyg [data-node-id].bq:not([style*="background-color"]),

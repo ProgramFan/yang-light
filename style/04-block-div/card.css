@@ -17,13 +17,14 @@
 
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-error-background);"]::before {
+  display: block !important;
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* 向上移动50%的自身高度，以确保垂直居中 */
   height: calc(100% - 10px); /* 上下边界距离 5px */
   width: 1px;
-  left: 40px;
+  left: 40px !important;
   background-color: var(--b3-card-error-border);
 }
 
@@ -39,13 +40,14 @@
 }
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-warning-background);"]::before {
+  display: block !important;
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* 向上移动50%的自身高度，以确保垂直居中 */
   height: calc(100% - 10px); /* 上下边界距离 5px */
   width: 1px;
-  left: 40px;
+  left: 40px !important;
   background-color: var(--b3-card-warning-border);
 }
 
@@ -61,13 +63,14 @@
 }
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-info-background);"]::before {
+  display: block important;
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* 向上移动50%的自身高度，以确保垂直居中 */
   height: calc(100% - 10px); /* 上下边界距离 5px */
   width: 1px;
-  left: 40px;
+  left: 40px !important;
   background-color: var(--b3-card-info-border);
 }
 
@@ -83,13 +86,14 @@
 }
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-success-background);"]::before {
+  display: block !important;
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* 向上移动50%的自身高度，以确保垂直居中 */
   height: calc(100% - 10px); /* 上下边界距离 5px */
   width: 1px;
-  left: 40px;
+  left: 40px !important;
   background-color: var(--b3-card-success-border);
 }
 
