@@ -63,7 +63,7 @@
 }
 .protyle-wysiwyg
 .bq[style*="background-color: var(--b3-card-info-background);"]::before {
-  display: block important;
+  display: block !important;
   content: "";
   position: absolute;
   top: 50%;
