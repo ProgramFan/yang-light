@@ -10,7 +10,10 @@
     border-left: none !important;
     padding: 5px 20px;
     border-radius: var(--b3-border-radius-noraml);
-    margin: 4px;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 /* ——————————修复无序列表中因为before伪元素造成的左边线条位置错乱—————————— */
